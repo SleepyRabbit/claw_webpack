@@ -1,0 +1,426 @@
+/*  common css   */
+
+
+
+
+/********************************* common configurations *********************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*word-wrap:break-word;*/
+}
+
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+  font: 14px/2.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif, Consolas;
+  line-height: 1.42857143;
+  /*font-weight: bold;*/
+  word-wrap:break-word;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/********************************* common configurations *********************************/
+
+
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.box-x {
+  width: 100% !important;
+}
+
+.box-y {
+  height: 100% !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-outline {
+  outline: none !important;
+}
+
+.close {
+  opacity: 0.7;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.close:active {
+  opacity: 0.1;
+}
+
+/********************************* border start *********************************/
+
+.no-border {
+  border: 0 !important;;
+}
+
+.border-radius-1 {
+  border-radius: 1px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+}
+
+.border-radius-2 {
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+.border-radius-3 {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.border-radius-4 {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+.border-radius-5 {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/********************************* border end *********************************/
+
+
+
+/********************************* button start *********************************/
+
+button.primary {
+  min-width: 80px;
+  min-height: 20px;
+  margin: 0 8px;
+  padding: 4px 8px;
+  color: white;
+  font-size: 12px;
+  background: -webkit-linear-gradient(bottom, rgb(0,68,204),rgb(0,120,204));  /* Safari */
+  background: -o-linear-gradient(top, rgb(0,68,204),rgb(0,120,204));    /* Opera */
+  background: -moz-linear-gradient(top, rgb(0,68,204),rgb(0,120,204));  /* Firefox */
+  background: linear-gradient(to top, rgb(0,68,204),rgb(0,120,204));
+}
+
+button.primary i {
+  padding-right: 4px;
+}
+
+button.primary:hover {
+  cursor: pointer;
+  background: -webkit-linear-gradient(bottom, rgb(0,68,204),rgb(0,100,204));  /* Safari */
+  background: -o-linear-gradient(top, rgb(0,68,204),rgb(0,100,204));    /* Opera */
+  background: -moz-linear-gradient(top, rgb(0,68,204),rgb(0,100,204));  /* Firefox */
+  background: linear-gradient(to top, rgb(0,68,204),rgb(0,100,204));
+}
+
+button.primary:active {
+  cursor: pointer;
+  background: rgb(0,20,204);
+}
+
+button.primary:focus {
+  outline: none;
+}
+
+/********************************* button end *********************************/
+
+
+
+/********************************* overflow start *********************************/
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.overflow-y-visible {
+  overflow-y: visible;
+}
+
+/********************************* overflow end *********************************/
+
+
+
+/********************************* flex start *********************************/
+
+.flex {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.flex-inline {
+  display: inline-flex;
+  display: -webkit-inline-flex;
+}
+
+/********************************* flex container start *********************************/
+
+.flex-direction-row {
+  flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap-nowrap {
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.flex-wrap-wrap {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flex-wrap-wrap-reverse {
+  -webkit-flex-wrap: wrap-reverse;
+  -moz-flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+
+.flex-justify-content-start {
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-justify-content-center {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
+.flex-justify-content-end {
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.flex-justify-content-space-between {
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.flex-justify-content-space-around {
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.flex-align-items-start {
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.flex-align-items-center {
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.flex-align-items-end {
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.flex-align-items-baseline {
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  -ms-align-items: baseline;
+  align-items: baseline;
+}
+
+.flex-align-items-stretch {
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+}
+
+/********************************* flex container end *********************************/
+
+
+/********************************* flex item start *********************************/
+
+.flex-order-0 {
+  order: 0;
+}
+
+.flex-order-1 {
+  order: 1;
+}
+
+.flex-order-2 {
+  order: 2;
+}
+
+.flex-order-99 {
+  order: 99;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-grow-1 {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+.flex-grow-99 {
+  flex-grow: 99;
+}
+
+.flex-shrink-0 {
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
+  -ms-flex-shrink: 0;
+  flex-shrink: 0;
+}
+
+.flex-shrink-1 {
+  -webkit-flex-shrink: 1;
+  -moz-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+}
+
+.flex-shrink-2 {
+  -webkit-flex-shrink: 2;
+  -moz-flex-shrink: 2;
+  -ms-flex-shrink: 2;
+  flex-shrink: 2;
+}
+
+.flex-shrink-99 {
+  flex-shrink: 99;
+}
+
+.flex-basis-auto {
+  -webkit-flex-basis: auto;
+  -moz-flex-basis: auto;
+  -ms-flex-basis: auto;
+  flex-basis: auto;
+}
+
+.flex-align-self-auto {
+  align-self: auto;
+}
+
+.flex-align-self-start {
+  align-self: flex-start;
+}
+
+.flex-align-self-center {
+  align-self: center;
+}
+
+.flex-align-self-end {
+  align-self: flex-end;
+}
+
+.flex-align-self-baseline {
+  align-self: baseline;
+}
+
+.flex-align-self-stretch {
+  align-self: stretch;
+}
+
+/********************************* flex item end *********************************/
+
+/********************************* flex end *********************************/
