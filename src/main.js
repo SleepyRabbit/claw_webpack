@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import VueResource from 'vue-resource'
 import './assets/css/common.css'
+import './assets/icon/icomoon/style.css'
 
 Vue.use(VueResource);
 Vue.http.options.emulateJSON = true;

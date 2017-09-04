@@ -85,8 +85,7 @@ export default {
         },
         res => {
           alert("账户有问题哦，截图发给技术蝈蝈领金币哦~");
-        });
-
+      });
     }
   },
   created: function() {
